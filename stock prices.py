@@ -17,7 +17,7 @@ print(data)
 data['label']=data['Close Price'].shift(-3)
 print(data)
 
-** here X is features and x label
+** here X is features and y label
 X=np.array(data.drop(['Close Price','label'],axis=1))
 Or {X=np.array(data[['Open Price','High Price','Low Price']])}
 Print(X)
